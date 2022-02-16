@@ -1,0 +1,11 @@
+{
+  "name": "banking",
+  "version": "1.0.0",
+  "description": "a financial transaction processing script",
+  "main": "index.js",
+  "author": "leon apkhazava",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
