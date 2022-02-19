@@ -1,0 +1,23 @@
+[
+  {
+    "date": "2022-01-01",
+    "user_id": 1,
+    "user_type": "natural",
+    "type": "cash_in",
+    "operation": { "amount": 200.0, "currency": "EUR" }
+  },
+  {
+    "date": "2022-02-21",
+    "user_id": 1,
+    "user_type": "natural",
+    "type": "cash_in",
+    "operation": { "amount": 10000.0, "currency": "EUR" }
+  },
+  {
+    "date": "2022-05-05",
+    "user_id": 1,
+    "user_type": "natural",
+    "type": "cash_in",
+    "operation": { "amount": 99000.0, "currency": "EUR" }
+  }
+]

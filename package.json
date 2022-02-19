@@ -5,7 +5,16 @@
   "main": "index.js",
   "author": "leon apkhazava",
   "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
   "devDependencies": {
+    "@babel/core": "^7.17.4",
+    "@babel/preset-env": "^7.16.11",
+    "babel-jest": "^27.5.1",
     "jest": "^27.5.1"
+  },
+  "dependencies": {
+    "luxon": "^2.3.0"
   }
 }

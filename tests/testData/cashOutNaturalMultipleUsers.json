@@ -1,0 +1,49 @@
+[
+  {
+    "date": "2022-01-02",
+    "user_id": 1,
+    "user_type": "natural",
+    "type": "cash_out",
+    "operation": { "amount": 1200.0, "currency": "EUR" }
+  },
+
+  {
+    "date": "2022-01-02",
+    "user_id": 2,
+    "user_type": "natural",
+    "type": "cash_out",
+    "operation": { "amount": 10.0, "currency": "EUR" }
+  },
+
+  {
+    "date": "2022-01-02",
+    "user_id": 3,
+    "user_type": "natural",
+    "type": "cash_out",
+    "operation": { "amount": 50.0, "currency": "EUR" }
+  },
+
+  {
+    "date": "2022-01-03",
+    "user_id": 1,
+    "user_type": "natural",
+    "type": "cash_out",
+    "operation": { "amount": 5000.0, "currency": "EUR" }
+  },
+
+  {
+    "date": "2022-01-03",
+    "user_id": 2,
+    "user_type": "natural",
+    "type": "cash_out",
+    "operation": { "amount": 11000.0, "currency": "EUR" }
+  },
+
+  {
+    "date": "2022-01-03",
+    "user_id": 3,
+    "user_type": "natural",
+    "type": "cash_out",
+    "operation": { "amount": 1003.0, "currency": "EUR" }
+  }
+]

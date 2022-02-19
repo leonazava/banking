@@ -1,0 +1,52 @@
+[
+  {
+    "date": "2022-01-01",
+    "user_id": 1,
+    "user_type": "juridical",
+    "type": "cash_out",
+    "operation": { "amount": 10.0, "currency": "EUR" }
+  },
+
+  {
+    "date": "2022-01-01",
+    "user_id": 1,
+    "user_type": "juridical",
+    "type": "cash_out",
+    "operation": { "amount": 2.0, "currency": "EUR" }
+  },
+  {
+    "date": "2022-01-01",
+    "user_id": 1,
+    "user_type": "juridical",
+    "type": "cash_out",
+    "operation": { "amount": 1.0, "currency": "EUR" }
+  },
+  {
+    "date": "2022-01-02",
+    "user_id": 1,
+    "user_type": "juridical",
+    "type": "cash_out",
+    "operation": { "amount": 400.0, "currency": "EUR" }
+  },
+  {
+    "date": "2022-01-05",
+    "user_id": 1,
+    "user_type": "juridical",
+    "type": "cash_out",
+    "operation": { "amount": 250.0, "currency": "EUR" }
+  },
+  {
+    "date": "2022-01-12",
+    "user_id": 1,
+    "user_type": "juridical",
+    "type": "cash_out",
+    "operation": { "amount": 110.0, "currency": "EUR" }
+  },
+  {
+    "date": "2022-02-26",
+    "user_id": 1,
+    "user_type": "juridical",
+    "type": "cash_out",
+    "operation": { "amount": 903.0, "currency": "EUR" }
+  }
+]
