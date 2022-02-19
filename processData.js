@@ -1,4 +1,5 @@
 const { DateTime } = require("luxon");
+const ceil = require("./ceil");
 
 function processData(input) {
   let users = [];
@@ -56,7 +57,7 @@ function processData(input) {
         }
     }
     // output the ceiled result to console
-    console.log(comission.toFixed(2));
+    console.log(ceil(comission));
   });
 }
 

@@ -1,12 +1,12 @@
 const { exec } = require("child_process");
+const ceil = require("../ceil");
 
 describe("operations processing", () => {
-  // test("ceil", async () => {
-  // exec("node index.js tests/testData/ceil.json", function (err, stdout) {
-  //   if (err) {
-  //     return err;
-  //   }
-  //   expect(stdout).toBe("0.04\n0.01\n0.02\n");
+  test("ceil", () => {
+    expect(ceil(0.0100001)).toBe("0.02");
+    expect(ceil(1.005)).toBe("1.01");
+    expect(ceil(0.999999)).toBe("1.00");
+  });
 
   test("cash in, 0.03 per operation, no more than 5", (done) => {
     exec("node index.js tests/testData/cashIn.json", function (err, stdout) {
