@@ -12,9 +12,12 @@
     "@babel/core": "^7.17.4",
     "@babel/preset-env": "^7.16.11",
     "babel-jest": "^27.5.1",
+    "babel-preset-airbnb": "^5.0.0",
+    "eslint": "^8.9.0",
     "jest": "^27.5.1"
   },
   "dependencies": {
+    "eslint-config-airbnb-base": "^15.0.0",
     "luxon": "^2.3.0"
   }
 }
