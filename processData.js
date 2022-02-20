@@ -5,7 +5,7 @@ const { DateTime } = require('luxon');
 const ceil = require('./ceil');
 
 function processData(input) {
-  const users = [];
+  const users = {};
   const rates = { cash_in: 0.03, cash_out: 0.3 };
   const weeklyBuffer = 1000;
 
