@@ -7,8 +7,9 @@ const ceil = require('./ceil');
 function processData(input) {
   const users = [];
   const rates = { cash_in: 0.03, cash_out: 0.3 };
-  // the calculated fee without conditions applied
   const weeklyBuffer = 1000;
+
+  // the calculated fee without conditions applied
   let initialEstimate = 0;
   // the final fee with all the required filters passed
   let comission = 0;
