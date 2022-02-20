@@ -25,20 +25,6 @@ function processData(input) {
     // parse the transaction's date to an operable format
     const date = DateTime.fromISO(el.date);
 
-    // special conditions for the users of type natural
-    if (user_type === 'natural') {
-      if (
-        // create a new buffer+date pool for each new encountered uid of type natural
-        !users[user_id]
-        // reset the buffer on a new week
-        || date.weekNumber > users[user_id].date.weekNumber
-        // reset the week number on a new year
-        || date.weekYear !== users[user_id].date.weekYear
-      ) {
-        users[user_id] = { date, weeklyBuffer };
-      }
-    }
-
     // process the operation
     switch (type) {
       case 'cash_in':
@@ -48,6 +34,11 @@ function processData(input) {
       case 'cash_out':
         switch (user_type) {
           case 'natural':
+            // check if the transaction happens on a week different that the previous transaction. if it does, reset the buffer
+            // and create a user registry if it doesn't exist yet
+            date.weekNumber !== users[user_id]?.date.weekNumber  
+            && (users[user_id] = { date, weeklyBuffer });
+
             initialEstimate = (amount - users[user_id].weeklyBuffer) * (rates[type] / 100);
             users[user_id].weeklyBuffer = users[user_id].weeklyBuffer - amount < 0
               ? 0
