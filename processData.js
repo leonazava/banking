@@ -38,9 +38,9 @@ function processData(input) {
             // and create a user registry if it doesn't exist yet
             date.weekNumber !== users[user_id]?.date.weekNumber  
             && (users[user_id] = { date, weeklyBuffer });
-            // apply yhe buffer and calculate the fee
+            // apply the buffer and calculate the fee
             initialEstimate = (amount - users[user_id].weeklyBuffer) * (rates[type] / 100);
-            // update the buffer value based on how much of it was exhausted
+            // update the buffer value based on how much of it was used
             users[user_id].weeklyBuffer = users[user_id].weeklyBuffer - amount < 0
               ? 0
               : users[user_id].weeklyBuffer - amount;
