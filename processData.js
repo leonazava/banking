@@ -22,7 +22,7 @@ function processData(input) {
       type,
     } = el;
 
-    // parse the transaction's date to an operable format
+    // parse the transaction's date to an operable forma
     const date = DateTime.fromISO(el.date);
 
     // process the operation
@@ -38,8 +38,9 @@ function processData(input) {
             // and create a user registry if it doesn't exist yet
             date.weekNumber !== users[user_id]?.date.weekNumber  
             && (users[user_id] = { date, weeklyBuffer });
-
+            // apply yhe buffer and calculate the fee
             initialEstimate = (amount - users[user_id].weeklyBuffer) * (rates[type] / 100);
+            // update the buffer value based on how much of it was exhausted
             users[user_id].weeklyBuffer = users[user_id].weeklyBuffer - amount < 0
               ? 0
               : users[user_id].weeklyBuffer - amount;
