@@ -22,7 +22,7 @@ function processData(input) {
       type,
     } = el;
 
-    // parse the transaction's date to an operable forma
+    // parse the transaction's date to an operable format
     const date = DateTime.fromISO(el.date);
 
     // process the operation
